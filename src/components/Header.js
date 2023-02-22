@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 const Title = () => (
   <a href="/">
     <img
@@ -14,10 +16,24 @@ const Header = () => {
       <Title />
       <div className="nav-items">
         <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Contact</li>
-          <li>Cart</li>
+          <li>
+            <Link to="/" className="link">
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link to="/about" className="link">
+              About
+            </Link>
+          </li>
+          <li>
+            <Link to="/contacts" className="link">
+              Contact
+            </Link>
+          </li>
+          <li>
+            <Link className="link">Cart</Link>
+          </li>
         </ul>
       </div>
     </div>
